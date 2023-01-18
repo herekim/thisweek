@@ -1,6 +1,8 @@
 # 디스위크
-
 주간 회고 서비스
+
+# 기존 저장소
+https://github.com/f-lab-edu/this-week
 
 # 기본정보
 
