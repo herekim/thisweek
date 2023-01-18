@@ -1,13 +1,14 @@
 import 'styles/globals.css';
 import type { AppProps } from 'next/app';
-import ModalProvider from 'components/modal/modalProvider';
-import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
-import AsyncBoundary from 'components/error/asyncBoundary';
-import Modal from 'components/modal/modal';
-import Navigator from 'components/navigator/navigator';
 
-import ErrorAlert from 'components/error/errorAlert';
+import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
+
 import Spinner from 'components/common/spinner';
+import AsyncBoundary from 'components/error/asyncBoundary';
+import ErrorAlert from 'components/error/errorAlert';
+import Modal from 'components/modal/modal';
+import ModalProvider from 'components/modal/modalProvider';
+import Navigator from 'components/navigator/navigator';
 
 const queryClient = new QueryClient({
   defaultOptions: {

@@ -1,6 +1,6 @@
-import Title from 'components/title/title';
 import MainContainer from 'components/container/mainContainer';
 import ReviewList from 'components/review/reviewList';
+import Title from 'components/title/title';
 
 import { useGetLastMonthReviewQuery } from 'queries/useReviewQuery';
 

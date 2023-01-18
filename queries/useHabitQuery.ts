@@ -1,5 +1,6 @@
-import { useMutation, useQuery, useQueryClient } from 'react-query';
 import { AxiosError } from 'axios';
+import { useMutation, useQuery, useQueryClient } from 'react-query';
+
 import { getHabits, createHabit, deleteHabit, updateHabit } from 'lib/apis';
 import { getDayShortForm } from 'lib/date';
 

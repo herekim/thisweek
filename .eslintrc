@@ -6,9 +6,6 @@
   },
   "extends": [
     "next/core-web-vitals",
-    "airbnb",
-    "airbnb-typescript",
-    "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:prettier/recommended"
@@ -41,7 +38,56 @@
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", ["parent", "sibling"], "index"],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["sibling", "parent", "index"],
+          "object",
+          "type"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "{react,react/*}",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "{next,next/*}",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "components/**/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "customs/**/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "queries/**/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "contexts/**/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "lib/**/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "constants/**/*",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true

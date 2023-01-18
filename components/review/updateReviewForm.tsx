@@ -1,19 +1,15 @@
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
-import Title from 'components/title/title';
+import { useEffect, useState } from 'react';
 
-import { REVIEW_TITLE } from 'constants/title/habitTitle';
-
-import WeekNumber from 'components/title/weekNumber';
-import Plus from 'components/svgs/plus.svg';
-
-import BottomFix from 'components/container/bottomFix';
 import SaveReviewButton from 'components/button/saveReviewButton';
+import BottomFix from 'components/container/bottomFix';
+import Plus from 'components/svgs/plus.svg';
+import Title from 'components/title/title';
+import WeekNumber from 'components/title/weekNumber';
 
 import useWindowSize from 'customs/useWindowSize';
 
-import { getWeek, getMonth, getYear } from 'lib/date';
 import {
   useGetReviewQuery,
   useUpdateReviewMutation,
@@ -21,6 +17,10 @@ import {
   TextColor,
   BackgroundColor,
 } from 'queries/useReviewQuery';
+
+import { getWeek, getMonth, getYear } from 'lib/date';
+
+import { REVIEW_TITLE } from 'constants/title/habitTitle';
 
 type FourLName = 'liked' | 'learned' | 'lacked' | 'longedfor';
 type HandleFourLTextProps = {
@@ -71,7 +71,7 @@ const UpdateReviewForm = () => {
       longedfor: fourLText.longedfor,
       tag: { data: tags },
     });
-    router.push('/');
+    void router.push('/');
   };
 
   const handleFourLText = ({ name, value }: HandleFourLTextProps) => {

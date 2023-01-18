@@ -1,10 +1,11 @@
+import { useRouter } from 'next/router';
+
 import { useEffect, useRef } from 'react';
 
-import useOutsideClick from 'customs/useOutsideClick';
-import useModal from 'customs/useModal';
-
 import CenterModalContainer from 'components/container/centerModalContainer';
-import { useRouter } from 'next/router';
+
+import useModal from 'customs/useModal';
+import useOutsideClick from 'customs/useOutsideClick';
 
 const ReviewCheckModal = () => {
   const modalRef = useRef<HTMLDivElement>(null);

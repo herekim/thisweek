@@ -1,5 +1,3 @@
-import { M } from 'chart.js/dist/chunks/helpers.core';
-
 const MOTIVATION_TITLE = {
   sm: '작은 변화는 큰 성장을 \n 가져올 거예요.',
   lg: '작은 변화는 큰 성장을 가져올 거예요.',

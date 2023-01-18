@@ -1,11 +1,12 @@
 import { useEffect, useRef } from 'react';
 
 import BottomSheetContainer from 'components/container/bottomSheetContainer';
-import useOutsideClick from 'customs/useOutsideClick';
-import useModal from 'customs/useModal';
 import CenterModalContainer from 'components/container/centerModalContainer';
-import useWindowSize from 'customs/useWindowSize';
 import CreateHabitTemplate from 'components/habit/createHabitTemplate';
+
+import useModal from 'customs/useModal';
+import useOutsideClick from 'customs/useOutsideClick';
+import useWindowSize from 'customs/useWindowSize';
 
 const CreateHabitModal = () => {
   const { type } = useWindowSize();

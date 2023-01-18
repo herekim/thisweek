@@ -1,15 +1,15 @@
+import Link from 'next/link';
+
 import { useEffect, useRef } from 'react';
 
+import Key from 'components/svgs/key.svg';
+import SquareCheck from 'components/svgs/squareCheck.svg';
 import Target from 'components/svgs/target.svg';
 // import BoxOpen from 'components/svgs/boxOpen.svg';
 // import ChartPie from 'components/svgs/chartPie.svg';
-import SquareCheck from 'components/svgs/squareCheck.svg';
 import User from 'components/svgs/user.svg';
-import Key from 'components/svgs/key.svg';
+
 import useModal from 'customs/useModal';
-
-import Link from 'next/link';
-
 import useOutsideClick from 'customs/useOutsideClick';
 
 const SideTap = () => {

@@ -1,10 +1,11 @@
-import Navigator from 'components/navigator/navigator';
-
-import Title from 'components/title/title';
-import { SETTING_TITLE } from 'constants/title/habitTitle';
-import MainContainer from 'components/container/mainContainer';
 import HeaderContainer from 'components/container/headerContainer';
+import MainContainer from 'components/container/mainContainer';
+import Navigator from 'components/navigator/navigator';
+import Title from 'components/title/title';
+
 import useWindowSize from 'customs/useWindowSize';
+
+import { SETTING_TITLE } from 'constants/title/habitTitle';
 
 const Setting = () => {
   const { type } = useWindowSize();

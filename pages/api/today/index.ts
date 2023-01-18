@@ -1,5 +1,5 @@
-import TodayHabits from 'pages/api/models/todayHabits';
 import createHandler from 'pages/api/middleware';
+import TodayHabits from 'pages/api/models/todayHabits';
 
 const cron = require('node-cron');
 

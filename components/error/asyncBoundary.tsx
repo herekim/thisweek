@@ -1,7 +1,8 @@
 import { ReactNode, ReactElement, Suspense } from 'react';
-import ErrorBoundary from 'components/error/errorBoundary';
 
 import { QueryErrorResetBoundary } from 'react-query';
+
+import ErrorBoundary from 'components/error/errorBoundary';
 
 type RejectedFallbackProps = {
   error: Error;

@@ -1,9 +1,10 @@
+import Link from 'next/link';
+
 import SideTap from 'components/modal/sideTap';
 import Bars from 'components/svgs/bars.svg';
 import User from 'components/svgs/user.svg';
-import useModal from 'customs/useModal';
 
-import Link from 'next/link';
+import useModal from 'customs/useModal';
 
 const Navigator = () => {
   const { openModal } = useModal();

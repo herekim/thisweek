@@ -1,7 +1,9 @@
 import { useState, useMemo } from 'react';
-import { ModalStateContext, ModalDispatchContext } from 'contexts/modalContext';
-import { ChildrenProps } from 'types/props';
+
 import { ModalStateType } from 'types/modal';
+import { ChildrenProps } from 'types/props';
+
+import { ModalStateContext, ModalDispatchContext } from 'contexts/modalContext';
 
 const ModalProvider = ({ children }: ChildrenProps) => {
   const [openedModal, setOpenedModal] = useState<ModalStateType | null>(null);

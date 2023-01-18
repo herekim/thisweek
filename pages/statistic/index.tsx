@@ -1,13 +1,15 @@
-import Navigator from 'components/navigator/navigator';
-import CurrentData from 'components/title/dateTitle';
-import Title from 'components/title/title';
-import { STATISTIC_TITLE } from 'constants/title/habitTitle';
-import MainContainer from 'components/container/mainContainer';
 import HeaderContainer from 'components/container/headerContainer';
+import MainContainer from 'components/container/mainContainer';
+import Navigator from 'components/navigator/navigator';
+import HabitTable from 'components/statistic/habitTable';
 import StatisticFourBoxes from 'components/statistic/statisticFourBoxes';
 import WeekActivity from 'components/statistic/weekActivity';
-import HabitTable from 'components/statistic/habitTable';
+import CurrentData from 'components/title/dateTitle';
+import Title from 'components/title/title';
+
 import useWindowSize from 'customs/useWindowSize';
+
+import { STATISTIC_TITLE } from 'constants/title/habitTitle';
 
 const Statistic = () => {
   const { type } = useWindowSize();

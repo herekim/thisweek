@@ -1,11 +1,8 @@
-import CurrentData from 'components/title/dateTitle';
-
-import MainContainer from 'components/container/mainContainer';
-import UpdateReviewForm from 'components/review/updateReviewForm';
-
 import Spinner from 'components/common/spinner';
-
+import MainContainer from 'components/container/mainContainer';
 import AsyncBoundary from 'components/error/asyncBoundary';
+import UpdateReviewForm from 'components/review/updateReviewForm';
+import CurrentData from 'components/title/dateTitle';
 
 const ReviewUpdate = () => {
   return (

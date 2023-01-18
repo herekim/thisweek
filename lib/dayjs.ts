@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
-import weekOfYear from 'dayjs/plugin/weekOfYear';
 import weekday from 'dayjs/plugin/weekday';
+import weekOfYear from 'dayjs/plugin/weekOfYear';
 dayjs.extend(weekOfYear);
 dayjs.extend(weekday);
 

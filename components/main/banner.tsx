@@ -1,12 +1,11 @@
-import Title from 'components/title/title';
-import MOTIVATION_TITLE from 'constants/title/habitTitle';
-
-import CurrentData from 'components/title/dateTitle';
-
 import AsyncBoundary from 'components/error/asyncBoundary';
 import ErrorAlert from 'components/error/errorAlert';
+import CurrentData from 'components/title/dateTitle';
+import Title from 'components/title/title';
 
 import useWindowSize from 'customs/useWindowSize';
+
+import MOTIVATION_TITLE from 'constants/title/habitTitle';
 
 const Banner = () => {
   const { type } = useWindowSize();

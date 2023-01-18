@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { createPortal } from 'react-dom';
 import { ChildrenProps } from 'types/props';
 
