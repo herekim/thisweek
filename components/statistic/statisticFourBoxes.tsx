@@ -1,4 +1,5 @@
 import ProgressCircle from 'components/common/progressCircle';
+
 import { Line, Bar } from 'lib/chartjs';
 
 const StatisticFourBoxes = () => {

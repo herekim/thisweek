@@ -1,6 +1,7 @@
 import Checkbox from 'components/button/checkbox';
 import UpdateHabitModal from 'components/modal/updateHabitModal';
 import Dots from 'components/svgs/dots.svg';
+
 import useHabitCardClick from 'customs/useHabitCardClick';
 import useModal from 'customs/useModal';
 

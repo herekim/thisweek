@@ -4,12 +4,6 @@
     "es2021": true,
     "node": true
   },
-  "settings": {
-    "import/resolver": {
-      "webpack": {},
-      "typescript": {}
-    }
-  },
   "extends": [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",

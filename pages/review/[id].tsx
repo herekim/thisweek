@@ -1,7 +1,9 @@
+import { useRouter } from 'next/router';
+
 import MainContainer from 'components/container/mainContainer';
 import ReviewContents from 'components/review/reviewContents';
 import Title from 'components/title/title';
-import { useRouter } from 'next/router';
+
 import { useGetReviewQuery } from 'queries/useReviewQuery';
 
 const ReviewDetail = () => {

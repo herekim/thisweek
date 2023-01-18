@@ -43,8 +43,6 @@
     "autoprefixer": "^10.4.13",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-typescript": "^3.5.3",
-    "eslint-import-resolver-webpack": "^0.13.2",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.10",

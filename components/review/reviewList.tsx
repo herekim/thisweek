@@ -1,5 +1,7 @@
-import ReviewSummaryCard from 'components/card/reviewSummaryCard';
 import Link from 'next/link';
+
+import ReviewSummaryCard from 'components/card/reviewSummaryCard';
+
 import { ReviewType } from 'queries/useReviewQuery';
 
 type ReviewListType = {

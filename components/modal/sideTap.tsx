@@ -1,13 +1,16 @@
+import Link from 'next/link';
+
+import { useEffect, useRef } from 'react';
+
 import Key from 'components/svgs/key.svg';
 import SquareCheck from 'components/svgs/squareCheck.svg';
 import Target from 'components/svgs/target.svg';
 // import BoxOpen from 'components/svgs/boxOpen.svg';
 // import ChartPie from 'components/svgs/chartPie.svg';
 import User from 'components/svgs/user.svg';
+
 import useModal from 'customs/useModal';
 import useOutsideClick from 'customs/useOutsideClick';
-import Link from 'next/link';
-import { useEffect, useRef } from 'react';
 
 const SideTap = () => {
   const modalRef = useRef<HTMLDivElement>(null);

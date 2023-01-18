@@ -5,9 +5,11 @@ import CreateHabit from 'components/modal/createHabitModal';
 import Pencel from 'components/svgs/pencel.svg';
 import CurrentData from 'components/title/dateTitle';
 import Title from 'components/title/title';
-import { HABIT_TITLE } from 'constants/title/habitTitle';
+
 import useModal from 'customs/useModal';
 import useWindowSize from 'customs/useWindowSize';
+
+import { HABIT_TITLE } from 'constants/title/habitTitle';
 
 const Habit = () => {
   const { openModal } = useModal();

@@ -1,7 +1,8 @@
 import { AxiosError } from 'axios';
+import { useMutation, useQuery, useQueryClient } from 'react-query';
+
 import { getHabits, createHabit, deleteHabit, updateHabit } from 'lib/apis';
 import { getDayShortForm } from 'lib/date';
-import { useMutation, useQuery, useQueryClient } from 'react-query';
 
 type RepeatDow = 'mon' | 'tue' | 'wed' | 'thu' | 'fri' | 'sat' | 'sun';
 

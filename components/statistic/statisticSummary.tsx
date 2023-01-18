@@ -1,7 +1,9 @@
 import StatisticSummaryText from 'components/main/statisticSummaryText';
 import Title from 'components/title/title';
-import { STATISTIC_SUMMARY_TITLE } from 'constants/title/habitTitle';
+
 import useWindowSize from 'customs/useWindowSize';
+
+import { STATISTIC_SUMMARY_TITLE } from 'constants/title/habitTitle';
 
 const StatisticSummary = () => {
   const { type } = useWindowSize();

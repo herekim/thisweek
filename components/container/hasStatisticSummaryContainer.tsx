@@ -1,5 +1,6 @@
-import StatisticSummary from 'components/statistic/statisticSummary';
 import { ReactNode } from 'react';
+
+import StatisticSummary from 'components/statistic/statisticSummary';
 
 type MainProps = {
   main: ReactNode;

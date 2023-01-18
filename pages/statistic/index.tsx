@@ -6,8 +6,10 @@ import StatisticFourBoxes from 'components/statistic/statisticFourBoxes';
 import WeekActivity from 'components/statistic/weekActivity';
 import CurrentData from 'components/title/dateTitle';
 import Title from 'components/title/title';
-import { STATISTIC_TITLE } from 'constants/title/habitTitle';
+
 import useWindowSize from 'customs/useWindowSize';
+
+import { STATISTIC_TITLE } from 'constants/title/habitTitle';
 
 const Statistic = () => {
   const { type } = useWindowSize();

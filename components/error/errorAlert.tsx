@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+
 import React from 'react';
 
 const ErrorAlert = ({ reset }: { error: Error; reset: () => void }) => {

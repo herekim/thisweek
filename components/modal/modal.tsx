@@ -1,7 +1,10 @@
-import Dim from 'components/modal/dim';
-import { ModalStateContext } from 'contexts/modalContext';
 import React, { useContext } from 'react';
+
 import { createPortal } from 'react-dom';
+
+import Dim from 'components/modal/dim';
+
+import { ModalStateContext } from 'contexts/modalContext';
 
 const Modal = () => {
   const openedModal = useContext(ModalStateContext);
