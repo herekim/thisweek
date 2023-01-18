@@ -1,4 +1,3 @@
-import { useMutation, useQuery, useQueryClient } from 'react-query';
 import { AxiosError } from 'axios';
 import {
   getReview,
@@ -15,6 +14,7 @@ import {
   getYearOfLastWeek,
   getLastWeek,
 } from 'lib/date';
+import { useMutation, useQuery, useQueryClient } from 'react-query';
 
 type FilteringReview = {
   year?: number;

@@ -1,6 +1,5 @@
-import Link from 'next/link';
-
 import { getWeek } from 'lib/date';
+import Link from 'next/link';
 
 const UpdateReviewButton = ({ reviewId }: { reviewId: number }) => {
   return (

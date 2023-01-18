@@ -8,7 +8,7 @@ const useTypingText = (content: string) => {
   useEffect(() => {
     const typingInterval = setInterval(() => {
       setText((prevTitleValue) => {
-        let result = prevTitleValue
+        const result = prevTitleValue
           ? prevTitleValue + completionWord[count]
           : completionWord[0];
         setCount(count + 1);

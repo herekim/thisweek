@@ -1,5 +1,5 @@
-import Habit from 'pages/api/models/habit';
 import createHandler from 'pages/api/middleware';
+import Habit from 'pages/api/models/habit';
 
 const app = createHandler();
 

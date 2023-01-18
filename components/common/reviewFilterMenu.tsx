@@ -1,6 +1,6 @@
-import { Fragment, ElementType } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import Filter from 'components/svgs/filter.svg';
+import { Fragment, ElementType } from 'react';
 
 type Item = { label: string; tag: ElementType; status: boolean };
 type Items = {

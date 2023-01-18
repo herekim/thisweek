@@ -1,5 +1,6 @@
-import Folder from 'components/svgs/folderOpen.svg';
 import Image from 'next/image';
+
+import Folder from 'components/svgs/folderOpen.svg';
 
 import useGetReviewsQuery from 'queries/useReviewQuery';
 

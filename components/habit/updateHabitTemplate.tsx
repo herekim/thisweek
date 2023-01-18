@@ -1,7 +1,8 @@
 import CreateButton from 'components/button/createButton';
 import DayCheckButton from 'components/button/dayCheckButton';
-import useModal from 'customs/useModal';
 import UpdateHabitModal from 'components/modal/updateHabitModal';
+
+import useModal from 'customs/useModal';
 import useUpdateHabit from 'customs/useUpdateHabit';
 type DayOfWeek = 'mon' | 'tue' | 'wed' | 'thu' | 'fri' | 'sat' | 'sun';
 

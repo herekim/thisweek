@@ -1,5 +1,5 @@
-import React from 'react';
 import useTypingText from 'customs/useTypingText';
+import React from 'react';
 
 type Props = {
   text: string;

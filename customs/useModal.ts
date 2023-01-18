@@ -1,5 +1,6 @@
-import { useContext } from 'react';
 import { ModalDispatchContext } from 'contexts/modalContext';
+import { useContext } from 'react';
+
 import { ModalStateType, ModalCloseType } from 'types/modal';
 
 export default function useModal() {

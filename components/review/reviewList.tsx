@@ -1,6 +1,6 @@
+import ReviewSummaryCard from 'components/card/reviewSummaryCard';
 import Link from 'next/link';
 import { ReviewType } from 'queries/useReviewQuery';
-import ReviewSummaryCard from 'components/card/reviewSummaryCard';
 
 type ReviewListType = {
   abled: boolean;

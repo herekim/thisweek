@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-
 import HabitModel from 'pages/api/models/habit';
 
 const { MONGODB_URI } = process.env;

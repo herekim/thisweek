@@ -1,8 +1,8 @@
 import Checkbox from 'components/button/checkbox';
-import useHabitCardClick from 'customs/useHabitCardClick';
-import Dots from 'components/svgs/dots.svg';
-import useModal from 'customs/useModal';
 import UpdateHabitModal from 'components/modal/updateHabitModal';
+import Dots from 'components/svgs/dots.svg';
+import useHabitCardClick from 'customs/useHabitCardClick';
+import useModal from 'customs/useModal';
 
 type Props = {
   content: string;

@@ -1,5 +1,5 @@
-import { ReactNode, ReactElement, Suspense } from 'react';
 import ErrorBoundary from 'components/error/errorBoundary';
+import { ReactNode, ReactElement, Suspense } from 'react';
 
 import { QueryErrorResetBoundary } from 'react-query';
 

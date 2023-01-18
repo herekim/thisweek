@@ -1,11 +1,10 @@
-import { useEffect, useRef } from 'react';
-
-import BottomSheetContainer from 'components/container/bottomSheetContainer';
-import useOutsideClick from 'customs/useOutsideClick';
-import useModal from 'customs/useModal';
-import CenterModalContainer from 'components/container/centerModalContainer';
-import useWindowSize from 'customs/useWindowSize';
 import CreateButton from 'components/button/createButton';
+import BottomSheetContainer from 'components/container/bottomSheetContainer';
+import CenterModalContainer from 'components/container/centerModalContainer';
+import useModal from 'customs/useModal';
+import useOutsideClick from 'customs/useOutsideClick';
+import useWindowSize from 'customs/useWindowSize';
+import { useEffect, useRef } from 'react';
 
 const CreateReview = () => {
   const { type } = useWindowSize();

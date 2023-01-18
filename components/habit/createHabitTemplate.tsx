@@ -1,6 +1,5 @@
 import CreateButton from 'components/button/createButton';
 import DayCheckButton from 'components/button/dayCheckButton';
-
 import useCreateHabit from 'customs/useCreateHabit';
 
 type DayOfWeek = 'mon' | 'tue' | 'wed' | 'thu' | 'fri' | 'sat' | 'sun';

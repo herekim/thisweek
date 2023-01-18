@@ -1,8 +1,8 @@
+import UpdateReviewButton from 'components/button/updateReviewButton';
+import WriteReviewButton from 'components/button/writeReviewButton';
+import BottomFix from 'components/container/bottomFix';
 import Banner from 'components/main/banner';
 import CollectionOfReviews from 'components/main/collectionOfReviews';
-import BottomFix from 'components/container/bottomFix';
-import WriteReviewButton from 'components/button/writeReviewButton';
-import UpdateReviewButton from 'components/button/updateReviewButton';
 
 import { useGetThisWeekReviewQuery } from 'queries/useReviewQuery';
 
