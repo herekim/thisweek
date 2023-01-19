@@ -21,7 +21,7 @@ import {
 
 import { getWeek, getMonth, isReviewDay, getYear } from 'lib/date';
 
-import { REVIEW_TITLE } from 'constants/title/habitTitle';
+import { REVIEW_TITLE } from 'constants/title/title';
 
 type FourLName = 'liked' | 'learned' | 'lacked' | 'longedFor';
 type HandleFourLTextProps = {

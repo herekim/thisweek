@@ -18,9 +18,10 @@ import {
   BackgroundColor,
 } from 'queries/useReviewQuery';
 
+import { getRandomInt } from 'lib/calculator';
 import { getWeek, getMonth, getYear } from 'lib/date';
 
-import { REVIEW_TITLE } from 'constants/title/habitTitle';
+import { REVIEW_TITLE } from 'constants/title/title';
 
 type FourLName = 'liked' | 'learned' | 'lacked' | 'longedfor';
 type HandleFourLTextProps = {
@@ -76,10 +77,6 @@ const UpdateReviewForm = () => {
 
   const handleFourLText = ({ name, value }: HandleFourLTextProps) => {
     setFourLText({ ...fourLText, [name]: value });
-  };
-
-  const getRandomInt = (max: number): number => {
-    return Math.floor(Math.random() * max);
   };
 
   return (
