@@ -1,6 +1,7 @@
 import 'styles/globals.css';
 import type { AppProps } from 'next/app';
 
+import { SessionProvider } from 'next-auth/react';
 import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
 
 import Spinner from 'components/common/spinner';
@@ -21,21 +22,27 @@ const queryClient = new QueryClient({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Hydrate state={pageProps.dehydratedState}>
-        <ModalProvider>
-          <AsyncBoundary
-            pendingFallback={<Spinner />}
-            rejectedFallback={({ error, reset }) => (
-              <ErrorAlert error={error} reset={reset} />
-            )}
-          >
-            <Navigator />
-            <Component {...pageProps} />
-            <Modal />
-          </AsyncBoundary>
-        </ModalProvider>
-      </Hydrate>
-    </QueryClientProvider>
+    <SessionProvider
+      session={pageProps.session}
+      // basePath 수정 필요
+      basePath="http://localhost:3000/api/auth"
+    >
+      <QueryClientProvider client={queryClient}>
+        <Hydrate state={pageProps.dehydratedState}>
+          <ModalProvider>
+            <AsyncBoundary
+              pendingFallback={<Spinner />}
+              rejectedFallback={({ error, reset }) => (
+                <ErrorAlert error={error} reset={reset} />
+              )}
+            >
+              <Navigator />
+              <Component {...pageProps} />
+              <Modal />
+            </AsyncBoundary>
+          </ModalProvider>
+        </Hydrate>
+      </QueryClientProvider>
+    </SessionProvider>
   );
 }
