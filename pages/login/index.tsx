@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Login = () => {
   return (
-    <div className="flex h-full flex-col items-center justify-center gap-10 bg-main-blue-10">
+    <div className="flex h-full flex-col items-center justify-center gap-10">
       <section className="flex flex-col items-center gap-10">
         <Image
           src={`/static/abstract3.png`}
@@ -16,11 +16,30 @@ const Login = () => {
         </section>
       </section>
       <section className="flex w-full flex-col items-center gap-3">
-        <button className="w-4/5 rounded-lg bg-kakao-yellow py-4">
-          카카오로 로그인
+        <button className="flex h-12 w-4/5 items-center justify-between rounded-lg bg-kakao-yellow px-5">
+          <div className="flex h-8 w-8 items-center justify-center">
+            <Image
+              src={`/static/kakao-logo.png`}
+              width="20"
+              height="20"
+              alt="empty"
+            />
+          </div>
+
+          <p>카카오로 로그인</p>
+          <div className="h-8 w-8"></div>
         </button>
-        <button className="w-4/5 rounded-lg bg-naver-green py-4 text-white">
-          네이버로 로그인
+        <button className="flex h-12 w-4/5 items-center justify-between rounded-lg bg-naver-green px-5 text-white">
+          <div className="flex h-8 w-8 items-center justify-center">
+            <Image
+              src={`/static/naver-logo.png`}
+              width="30"
+              height="30"
+              alt="empty"
+            />
+          </div>
+          <p>네이버로 로그인</p>
+          <div className="h-8 w-8"></div>
         </button>
       </section>
     </div>
