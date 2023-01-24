@@ -31,5 +31,5 @@ https://github.com/f-lab-edu/this-week
 1. 성능 최적화
 2. 테스트
 3. 디자인 시스템
-4. UI 라이브러리 (?)
+4. UI 라이브러
 5. 사이트맵
