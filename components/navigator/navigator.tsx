@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import SideTap from 'components/modal/sideTap';
 import Bars from 'components/svgs/bars.svg';
@@ -7,10 +8,18 @@ import User from 'components/svgs/user.svg';
 import useModal from 'customs/useModal';
 
 const Navigator = () => {
+  const { pathname } = useRouter();
   const { openModal } = useModal();
 
+  const isHidden =
+    pathname.indexOf('login') > 0 || pathname.indexOf('redirect') > 0;
+
   return (
-    <nav className="fixed top-0 left-0 right-0 flex h-12 items-center justify-between px-5 backdrop-blur">
+    <nav
+      className={`${
+        isHidden ? 'hidden' : 'block'
+      } fixed top-0 left-0 right-0 flex h-12 items-center justify-between px-5 backdrop-blur`}
+    >
       <div className="flex items-center gap-6">
         <button
           className="lg:hidden"

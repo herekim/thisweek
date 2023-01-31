@@ -5,7 +5,7 @@ import Title from 'components/title/title';
 
 import useWindowSize from 'customs/useWindowSize';
 
-import { SETTING_TITLE } from 'constants/title/habitTitle';
+import { SETTING_TITLE } from 'constants/title/title';
 
 const Setting = () => {
   const { type } = useWindowSize();

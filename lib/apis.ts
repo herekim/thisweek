@@ -62,6 +62,11 @@ type NewReview = {
 type DeleteReview = {
   id: number;
 };
+type CreateUserProps = {
+  // newUser: { name: string; password: string };
+  providerName: 'google';
+  search: string;
+};
 export const getReviews = async (query?: string) =>
   await axiosInstance.get(`/api/reviews?${query}`);
 export const getReview = async (id: string | string[] | undefined) =>
@@ -78,3 +83,9 @@ export const deleteReview = async (id: DeleteReview) => {
     data: id,
   });
 };
+export const createUser = async ({
+  // newUser,
+  providerName,
+  search,
+}: CreateUserProps) =>
+  await axiosInstance.get(`/api/auth/${providerName}/callback${search}`);

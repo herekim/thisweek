@@ -3,13 +3,11 @@ import ErrorAlert from 'components/error/errorAlert';
 import CurrentData from 'components/title/dateTitle';
 import Title from 'components/title/title';
 
-import useWindowSize from 'customs/useWindowSize';
+import { getRandomInt } from 'lib/calculator';
 
-import MOTIVATION_TITLE from 'constants/title/habitTitle';
+import { MOTIVATION_TITLE } from 'constants/title/title';
 
 const Banner = () => {
-  const { type } = useWindowSize();
-
   return (
     <div className="p-6">
       <div className="pb-6">
@@ -23,7 +21,10 @@ const Banner = () => {
       >
         <div>
           <div className="h-16 pb-2">
-            <Title text={MOTIVATION_TITLE[type]} typing={true} />
+            <Title
+              text={MOTIVATION_TITLE[getRandomInt(MOTIVATION_TITLE.length)]}
+              typing={true}
+            />
           </div>
         </div>
       </AsyncBoundary>

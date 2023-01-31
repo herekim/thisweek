@@ -9,7 +9,7 @@ import Title from 'components/title/title';
 import useModal from 'customs/useModal';
 import useWindowSize from 'customs/useWindowSize';
 
-import { HABIT_TITLE } from 'constants/title/habitTitle';
+import { HABIT_TITLE } from 'constants/title/title';
 
 const Habit = () => {
   const { openModal } = useModal();

@@ -9,7 +9,7 @@ import Title from 'components/title/title';
 
 import useWindowSize from 'customs/useWindowSize';
 
-import { STATISTIC_TITLE } from 'constants/title/habitTitle';
+import { STATISTIC_TITLE } from 'constants/title/title';
 
 const Statistic = () => {
   const { type } = useWindowSize();

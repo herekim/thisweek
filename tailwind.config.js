@@ -37,6 +37,8 @@ module.exports = {
         'main-black-40': '#00000066',
         'sub-text': '#AAAAAA',
         'soft-black': '#0E1111',
+        'kakao-yellow': '#FEE500',
+        'naver-green': '#03C75A',
       },
       keyframes: {
         toggle: {
