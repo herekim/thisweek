@@ -36,7 +36,7 @@ const Login = () => {
           <div className="h-8 w-8"></div>
         </button>
         <button
-          onClick={() => signIn('google', { callbackUrl: '/' })}
+          onClick={() => signIn('naver', { callbackUrl: '/' })}
           className="flex h-12 w-4/5 items-center justify-between rounded-lg bg-naver-green px-5 text-white"
         >
           <div className="flex h-8 w-8 items-center justify-center">
@@ -50,14 +50,9 @@ const Login = () => {
           <p>네이버로 로그인</p>
           <div className="h-8 w-8"></div>
         </button>
-        <button
-          onClick={() => signIn('google', { callbackUrl: '/logincheck' })}
-          className="flex h-12 w-4/5 items-center justify-between rounded-lg border border-black px-5"
-        >
-          <div className="flex h-8 w-8 items-center justify-center"></div>
-          <p>구글로 로그인</p>
-          <div className="h-8 w-8"></div>
-        </button>
+        <a href="http://localhost:1337/api/connect/google">
+          <p>구글 로그인</p>
+        </a>
       </section>
     </div>
   );

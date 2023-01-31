@@ -11,7 +11,8 @@ const Navigator = () => {
   const { pathname } = useRouter();
   const { openModal } = useModal();
 
-  const isHidden = pathname.indexOf('login') > 0;
+  const isHidden =
+    pathname.indexOf('login') > 0 || pathname.indexOf('redirect') > 0;
 
   return (
     <nav

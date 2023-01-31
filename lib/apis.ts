@@ -62,6 +62,10 @@ type NewReview = {
 type DeleteReview = {
   id: number;
 };
+type CreateUserProps = {
+  name: string;
+  password: string;
+};
 export const getReviews = async (query?: string) =>
   await axiosInstance.get(`/api/reviews?${query}`);
 export const getReview = async (id: string | string[] | undefined) =>
@@ -78,3 +82,5 @@ export const deleteReview = async (id: DeleteReview) => {
     data: id,
   });
 };
+export const createUser = async (newUser: CreateUserProps) =>
+  await axiosInstance.post('/api/auth/local', newUser);
